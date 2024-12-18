@@ -3,10 +3,9 @@
      <div class="flex gap-4">
          <div>
              <select wire:model.fill="greeting">
-                 <option value="Hello">Hello</option>
-                 <option value="Howdy" selected>Howdy</option>
-                 <option value="Hi">Hi</option>
-                 <option value="Hey">Hey</option>
+                 @foreach ($greetings as $item)
+                 <option value="{{ $item->greeting }}">{{ $item->greeting }}</option>
+                 @endforeach
              </select>
          </div>
 
