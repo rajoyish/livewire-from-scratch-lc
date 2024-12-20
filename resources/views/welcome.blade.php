@@ -16,7 +16,8 @@
         <div class="bg-gray-50 text-black/80">
             <div class="relative min-h-screen flex flex-col p-4  shadow-md">
             <div class="bg-white p-4 shadow-md">
-                <livewire:greeter/>
+                {{-- <livewire:greeter/> --}}
+                <livewire:search/>
             </div>
             </div>
         </div>
