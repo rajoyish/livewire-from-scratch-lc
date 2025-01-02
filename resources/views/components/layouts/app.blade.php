@@ -12,7 +12,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="font-sans antialiased">
+<body class="font-sans antialiased" x-data x-on:click="$dispatch('search:clear-results')">
     <div class="bg-gray-50 text-black/80">
         <div class="relative min-h-screen flex flex-col p-4  shadow-md">
             <div class="bg-white p-4 shadow-md space-y-8">
