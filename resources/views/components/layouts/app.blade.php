@@ -21,6 +21,9 @@
             </div>
         </div>
     </div>
+    <script data-navigate-once>
+        console.log('Page loaded');
+    </script>
 </body>
 
 </html>
