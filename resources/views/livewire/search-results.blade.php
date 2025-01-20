@@ -10,7 +10,7 @@
         @endif
         <div class="p-2 border-b border-gray-200"></div>
         @foreach ($results as $result)
-            <div class="p-2 border-b border-gray-200">
+            <div wire:key="{{ $result->id }}" class="p-2 border-b border-gray-200" >
                 <a wire:navigate href="/articles/{{ $result->id }}">{{ $result->title }}</a>
             </div>
         @endforeach

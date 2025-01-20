@@ -15,8 +15,18 @@
 <body class="font-sans antialiased" x-data x-on:click="$dispatch('search:clear-results')">
     <div class="bg-gray-50 text-black/80">
         <div class="relative min-h-screen flex flex-col p-4  shadow-md">
-            <div class="bg-white p-4 shadow-md space-y-8">
-                <livewire:search placeholder="Type something to search" />
+            <div class="bg-white p-4 shadow-md space-y-8 md:mx-auto md:max-w-7xl">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <x-nav-link href="/">Home</x-nav-link>
+                        <x-nav-link href="{{ route('articles') }}">Articles</x-nav-link>
+                    </div>
+                    <div>
+                        <livewire:search placeholder="Type something to search" />
+                    </div>
+                </div>
+                <hr>
+
                 {{ $slot }}
             </div>
         </div>
