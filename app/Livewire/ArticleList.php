@@ -16,7 +16,7 @@ class ArticleList extends AdminComponent
     public function render()
     {
         return view('livewire.article-list', [
-            'articles' => Article::all(),
+            'articles' => Article::latest()->get(),
         ]);
     }
 }

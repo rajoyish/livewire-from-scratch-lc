@@ -3,8 +3,10 @@
 namespace App\Livewire;
 
 use App\Models\Article;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
+#[Title('Show Article')]
 class ShowArticle extends Component
 {
     public Article $article;

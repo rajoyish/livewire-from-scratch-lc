@@ -12,7 +12,7 @@ class ArticleIndex extends Component
     public function render()
     {
         return view('livewire.article-index', [
-            'articles' => Article::all(),
+            'articles' => Article::latest()->get(),
         ]);
     }
 }
