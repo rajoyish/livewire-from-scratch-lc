@@ -41,7 +41,65 @@
                             class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
                             Publish
                         </button>
+
                     </div>
+                    <div class="flex mt-6">
+                        <input type="checkbox" wire:model.boolean="form.published"
+                            class="shrink-0 mt-0.5 border-gray-200 rounded-sm text-blue-600 focus:ring-blue-500 checked:border-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                            id="hs-default-checkbox">
+                        <label for="hs-default-checkbox"
+                            class="text-sm text-gray-500 ms-3 dark:text-neutral-400">Published</label>
+                    </div>
+                    <ul class="flex flex-col sm:flex-row mt-6">
+                        <li
+                            class="inline-flex items-center gap-x-2.5 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg sm:-ms-px sm:mt-0 sm:first:rounded-se-none sm:first:rounded-es-lg sm:last:rounded-es-none sm:last:rounded-se-lg dark:bg-neutral-800 dark:border-neutral-700 dark:text-white">
+                            <div class="relative flex items-start w-full">
+                                <div class="flex items-center h-5">
+                                    <input wire:model="form.notification" value="email"
+                                        id="hs-horizontal-list-group-item-radio-1"
+                                        name="hs-horizontal-list-group-item-radio" type="radio"
+                                        class="border-gray-200 rounded-full disabled:opacity-50 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+                                        checked="">
+                                </div>
+                                <label for="hs-horizontal-list-group-item-radio-1"
+                                    class="ms-3 block w-full text-sm text-gray-600 dark:text-neutral-500">
+                                    Email
+                                </label>
+                            </div>
+                        </li>
+
+                        <li
+                            class="inline-flex items-center gap-x-2.5 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg sm:-ms-px sm:mt-0 sm:first:rounded-se-none sm:first:rounded-es-lg sm:last:rounded-es-none sm:last:rounded-se-lg dark:bg-neutral-800 dark:border-neutral-700 dark:text-white">
+                            <div class="relative flex items-start w-full">
+                                <div class="flex items-center h-5">
+                                    <input wire:model="form.notification" value="sms"
+                                        id="hs-horizontal-list-group-item-radio-2"
+                                        name="hs-horizontal-list-group-item-radio" type="radio"
+                                        class="border-gray-200 rounded-full disabled:opacity-50 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800">
+                                </div>
+                                <label for="hs-horizontal-list-group-item-radio-2"
+                                    class="ms-3 block w-full text-sm text-gray-600 dark:text-neutral-500">
+                                    SMS
+                                </label>
+                            </div>
+                        </li>
+
+                        <li
+                            class="inline-flex items-center gap-x-2.5 py-3 px-4 text-sm font-medium bg-white border border-gray-200 text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg sm:-ms-px sm:mt-0 sm:first:rounded-se-none sm:first:rounded-es-lg sm:last:rounded-es-none sm:last:rounded-se-lg dark:bg-neutral-800 dark:border-neutral-700 dark:text-white">
+                            <div class="relative flex items-start w-full">
+                                <div class="flex items-center h-5">
+                                    <input wire:model="form.notification" value="none"
+                                        id="hs-horizontal-list-group-item-radio-3"
+                                        name="hs-horizontal-list-group-item-radio" type="radio"
+                                        class="border-gray-200 rounded-full disabled:opacity-50 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800">
+                                </div>
+                                <label for="hs-horizontal-list-group-item-radio-3"
+                                    class="ms-3 block w-full text-sm text-gray-600 dark:text-neutral-500">
+                                    None
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
                 </form>
                 <!-- End Form -->
             </div>
