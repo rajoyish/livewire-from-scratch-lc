@@ -36,17 +36,11 @@
                         </div>
                     </div>
                     <!-- End Grid -->
-                    <div class="mt-6 grid">
-                        <button type="submit"
-                            class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
-                            Publish
-                        </button>
 
-                    </div>
 
                     <div class="flex my-6">
                         <input type="checkbox" wire:model.boolean="form.published"
-                            class="shrink-0 mt-0.5 border-gray-200 rounded-sm text-green-600 focus:ring-green-500 checked:border-green-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-green-500 dark:checked:border-green-500 dark:focus:ring-offset-gray-800"
+                            class="shrink-0 mt-0.5 border-gray-200 rounded-sm text-blue-600 focus:ring-blue-500 checked:border-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
                             id="hs-default-checkbox">
                         <label for="hs-default-checkbox" class="text-sm text-gray-500 ms-3 dark:text-neutral-400">Set as
                             Published</label>
@@ -61,7 +55,7 @@
                                         <input wire:model.boolean="form.allowNotifications" value="true"
                                             id="hs-horizontal-list-group-item-radio-1"
                                             name="hs-horizontal-list-group-item-radio" type="radio"
-                                            class="border-gray-200 rounded-full disabled:opacity-50 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-green-500 dark:checked:border-green-500 dark:focus:ring-offset-gray-800"
+                                            class="border-gray-200 rounded-full disabled:opacity-50 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
                                             checked="">
                                     </div>
                                     <label for="hs-horizontal-list-group-item-radio-1"
@@ -78,7 +72,7 @@
                                         <input wire:model.boolean="form.allowNotifications" value="false"
                                             id="hs-horizontal-list-group-item-radio-2"
                                             name="hs-horizontal-list-group-item-radio" type="radio"
-                                            class="border-gray-200 rounded-full disabled:opacity-50 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-green-500 dark:checked:border-green-500 dark:focus:ring-offset-gray-800">
+                                            class="border-gray-200 rounded-full disabled:opacity-50 dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800">
                                     </div>
                                     <label for="hs-horizontal-list-group-item-radio-2"
                                         class="ms-3 block w-full text-sm text-gray-600 dark:text-neutral-500">
@@ -92,7 +86,7 @@
                         <div x-show="$wire.form.allowNotifications" class="space-y-4">
                             <div class="flex">
                                 <input type="checkbox" wire:model="form.notifications" value="email"
-                                    class="shrink-0 mt-0.5 border-gray-200 rounded-sm text-green-600 focus:ring-green-500 checked:border-green-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-green-500 dark:checked:border-green-500 dark:focus:ring-offset-gray-800"
+                                    class="shrink-0 mt-0.5 border-gray-200 rounded-sm text-blue-600 focus:ring-blue-500 checked:border-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
                                     id="hs-default-checkbox">
                                 <label for="hs-default-checkbox"
                                     class="text-sm text-gray-500 ms-3 dark:text-neutral-400">Email</label>
@@ -100,7 +94,7 @@
 
                             <div class="flex">
                                 <input type="checkbox" wire:model="form.notifications" value="sms"
-                                    class="shrink-0 mt-0.5 border-gray-200 rounded-sm text-green-600 focus:ring-green-500 checked:border-green-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-green-500 dark:checked:border-green-500 dark:focus:ring-offset-gray-800"
+                                    class="shrink-0 mt-0.5 border-gray-200 rounded-sm text-blue-600 focus:ring-blue-500 checked:border-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
                                     id="hs-checked-checkbox" checked="">
                                 <label for="hs-checked-checkbox"
                                     class="text-sm text-gray-500 ms-3 dark:text-neutral-400">SMS</label>
@@ -108,12 +102,19 @@
 
                             <div class="flex">
                                 <input type="checkbox" wire:model="form.notifications" value="push"
-                                    class="shrink-0 mt-0.5 border-gray-200 rounded-sm text-green-600 focus:ring-green-500 checked:border-green-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-green-500 dark:checked:border-green-500 dark:focus:ring-offset-gray-800"
+                                    class="shrink-0 mt-0.5 border-gray-200 rounded-sm text-blue-600 focus:ring-blue-500 checked:border-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
                                     id="hs-checked-checkbox" checked="">
                                 <label for="hs-checked-checkbox"
                                     class="text-sm text-gray-500 ms-3 dark:text-neutral-400">Push</label>
                             </div>
                         </div>
+                    </div>
+                    <div class="mt-6 grid">
+                        <button wire:dirty.class="hover:bg-blue-900" wire:dirty.remove.attr="disabled" disabled
+                            type="submit"
+                            class="w-full disabled:bg-blue-600 py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+                            Save
+                        </button>
                     </div>
                 </form>
                 <!-- End Form -->
